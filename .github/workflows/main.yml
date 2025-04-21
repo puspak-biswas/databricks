@@ -16,7 +16,7 @@ jobs:
         env:
           DATABRICKS_HOST: https://enb-accenture.cloud.databricks.com
           DATABRICKS_TOKEN: ${{secrets.databricks_token}}
-      - run: databricks bundle deploy
+        run: databricks bundle deploy
         working-directory: ./pkb_asset_bundle/dev/files
           
           
