@@ -1,0 +1,23 @@
+on:
+  push
+
+jobs:
+  update:
+    runs-on: ubuntu_latest
+
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4.9.1
+
+      - name: install-databricks-cli
+        uses: microsoft/install-databricks-cli@v1.0.0
+
+      - name: update databricks
+        env:
+          DATABRICKS_HOST: https://enb-accenture.cloud.databricks.com
+          DATABRICKS_TOKEN: ${{secrets.databricks_token}}
+      - run: databricks bundle deploy
+        working-directory: ./pkb_asset_bundle/dev/files
+          
+          
+        
