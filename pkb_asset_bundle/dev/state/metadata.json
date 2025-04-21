@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "config": {
+    "bundle": {
+      "git": {
+        "bundle_root_path": "."
+      }
+    },
+    "workspace": {
+      "file_path": "/Workspace/Users/puspak.kumar.biswas@accenture.com/.bundle/pkb_asset_bundle/dev/files"
+    },
+    "resources": {
+      "jobs": {
+        "pkb_asset_bundle_job": {
+          "id": "822361174216012",
+          "relative_path": "resources/pkb_asset_bundle.job.yml"
+        }
+      }
+    }
+  }
+}
